@@ -1,0 +1,10 @@
+earthengine-api
+gspread>=6
+google-auth
+pandas
+numpy
+requests
+openpyxl
+rapidfuzz
+beautifulsoup4
+pypdf
