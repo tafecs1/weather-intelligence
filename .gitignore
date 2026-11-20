@@ -1,0 +1,10 @@
+output/
+data/forecast_vintages/
+data/backups/
+data/audit/
+data/logs/
+data/failed/
+data/checkpoints/*.pkl
+__pycache__/
+*.json
+!data/checkpoints/archive_state.json
