@@ -1,0 +1,75 @@
+name: Weather Intelligence
+
+on:
+  schedule:
+    - cron: "15 0 * * *"        # daily 05:45 IST (00:15 UTC). Keep to ONE run a day (Open-Meteo free limits).
+  workflow_dispatch:
+    inputs:
+      run_states:
+        description: "Test run: comma-separated states (e.g. Tamil Nadu,Puducherry). Empty = all India"
+        required: false
+        default: ""
+      build_daily_history:
+        description: "Open-Meteo daily archive (1 = on, rate-limited)"
+        required: false
+        default: "0"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weather-intelligence
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install packages
+        run: pip install -r requirements.txt
+
+      - name: Run weather pipeline
+        env:
+          GEE_SERVICE_ACCOUNT_JSON: ${{ secrets.GEE_SERVICE_ACCOUNT_JSON }}
+          GEE_PROJECT: ${{ secrets.GEE_PROJECT }}
+          WEATHER_SHEET_ID: ${{ secrets.WEATHER_SHEET_ID }}
+          TEHSIL_MASTER_SHEET_ID: ${{ secrets.TEHSIL_MASTER_SHEET_ID }}
+          IMD_API_KEY: ${{ secrets.IMD_API_KEY }}
+          IMD_AUTH_SCHEME: ${{ secrets.IMD_AUTH_SCHEME }}
+          RUN_STATES: ${{ github.event.inputs.run_states }}
+          BUILD_DAILY_HISTORY: ${{ github.event.inputs.build_daily_history || '0' }}
+          WEATHER_DATA_DIR: data
+        run: python weather.py
+
+      - name: Upload Excel, forecast vintage, audit and logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: weather-${{ github.run_number }}
+          retention-days: 90
+          if-no-files-found: ignore
+          path: |
+            output/
+            data/forecast_vintages/
+            data/audit/
+            data/logs/
+            data/failed/
+
+      - name: Commit small history files (full-India runs only)
+        if: success() && github.event.inputs.run_states == ''
+        run: |
+          git config user.name  "weather-bot"
+          git config user.email "actions@users.noreply.github.com"
+          for p in data/masters data/alerts data/imd_public data/history data/checkpoints/archive_state.json; do
+            [ -e "$p" ] && git add -A "$p"
+          done
+          git diff --cached --quiet || git commit -m "Weather run $(date -u +%F)"
+          git pull --rebase --autostash && git push
