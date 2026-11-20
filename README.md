@@ -11,7 +11,9 @@ Crop or Groundwater repos.
 2. **Tehsil code clean-up**: zero-padded TEHSIL_MASTER codes ("05796") aligned to official LGD codes; duplicate rows
    left under an old (pre-split) parent district are removed, or moved to the official district if no correct copy exists.
    Every action is listed in LGD NAME MATCHING AUDIT. `FIX_TEHSIL_CODES=0` turns it off.
-3. **RUN_STATES env**: lets you test one state from the Actions "Run workflow" box.
+3. **IMERG diagnostics**: the satellite-rainfall check looks at the last 10 days only (same result, no full-archive scan)
+   and logs the reason for every dataset tried.
+4. **RUN_STATES env**: lets you test one state from the Actions "Run workflow" box.
 Nothing else: same sources, thresholds, scores, tabs, sheet IDs.
 
 ## Outputs

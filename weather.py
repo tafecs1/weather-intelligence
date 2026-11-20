@@ -1,6 +1,6 @@
 # =====================================================================
 # INDIA AGRICULTURE WEATHER INTELLIGENCE PLATFORM - v6 (Colab cell OR GitHub Actions script)
-# GitHub build: notebook logic unchanged; additions are marked [GH] (name standard, tehsil-code clean-up, RUN_STATES env for test runs).
+# GitHub build: notebook logic unchanged; additions are marked [GH] (name standard, tehsil-code clean-up, IMERG diagnostics, RUN_STATES env for test runs).
 # Fixed Google Sheet. Sheet tabs: 4 requested tabs + 3 history tabs. Everything else -> Excel/Drive.
 # Agri Intelligence workbook is never written.
 # =====================================================================
@@ -534,13 +534,18 @@ OBS_ST = METAR.copy() if len(METAR) else pd.DataFrame(columns=["id", "lat", "lon
 IMERG_NOTE, IMERG_FRESH, IMG_IMERG = "not attempted", False, None
 def imerg_setup():
     global IMERG_NOTE, IMERG_FRESH
+    notes = []      # [GH] keep the reason for EVERY dataset tried (V07 error was being overwritten by the V06 note)
     for cid, band in (("NASA/GPM_L3/IMERG_V07", "precipitation"), ("NASA/GPM_L3/IMERG_V06", "precipitationCal")):
         try:
-            col = ee.ImageCollection(cid); lt = col.aggregate_max("system:time_start").getInfo(); latest = dt.datetime.fromtimestamp(lt / 1000, UTC); age = (dt.datetime.now(UTC) - latest).total_seconds() / 3600
-            if age > 48: IMERG_NOTE = f"{cid}: latest {latest:%Y-%m-%d} UTC ({age/24:.0f} days behind) STALE, not used"; continue
-            IMERG_FRESH = True; IMERG_NOTE = f"{cid}: latest {latest:%Y-%m-%d %H:%M} UTC ({age:.1f} h old)"
+            # [GH] look only at the last 10 days: same "latest image" result, but avoids scanning the full 1998-now collection (can time out)
+            col = ee.ImageCollection(cid).filterDate(dt.datetime.now(UTC) - dt.timedelta(days=10), dt.datetime.now(UTC) + dt.timedelta(days=1)); lt = col.aggregate_max("system:time_start").getInfo()
+            if lt is None: notes.append(f"{cid}: no images in the last 10 days STALE, not used"); continue
+            latest = dt.datetime.fromtimestamp(lt / 1000, UTC); age = (dt.datetime.now(UTC) - latest).total_seconds() / 3600
+            if age > 48: notes.append(f"{cid}: latest {latest:%Y-%m-%d} UTC ({age/24:.0f} days behind) STALE, not used"); continue
+            IMERG_FRESH = True; IMERG_NOTE = " | ".join(notes + [f"{cid}: latest {latest:%Y-%m-%d %H:%M} UTC ({age:.1f} h old)"])
             return col.filterDate(latest - dt.timedelta(hours=24), latest + dt.timedelta(minutes=1)).select(band).sum().multiply(0.5).rename("imerg24")
-        except Exception as e: IMERG_NOTE = f"{cid}: {type(e).__name__}: {str(e)[:70]}"
+        except Exception as e: notes.append(f"{cid}: {type(e).__name__}: {str(e)[:120]}")
+    IMERG_NOTE = " | ".join(notes) or IMERG_NOTE
     return None
 try: IMG_IMERG = imerg_setup()
 except Exception as e: IMERG_NOTE = f"error {str(e)[:70]}"
