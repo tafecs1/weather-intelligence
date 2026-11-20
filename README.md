@@ -8,7 +8,10 @@ Crop or Groundwater repos.
 1. **Name standard**: State / District / Tehsil printed with the official LGD spelling; original
    TEHSIL_MASTER spelling kept in `Source state/district/tehsil name` columns. `STANDARDIZE_NAMES=0`
    reproduces the notebook output exactly.
-2. **RUN_STATES env**: lets you test one state from the Actions "Run workflow" box.
+2. **Tehsil code clean-up**: zero-padded TEHSIL_MASTER codes ("05796") aligned to official LGD codes; duplicate rows
+   left under an old (pre-split) parent district are removed, or moved to the official district if no correct copy exists.
+   Every action is listed in LGD NAME MATCHING AUDIT. `FIX_TEHSIL_CODES=0` turns it off.
+3. **RUN_STATES env**: lets you test one state from the Actions "Run workflow" box.
 Nothing else: same sources, thresholds, scores, tabs, sheet IDs.
 
 ## Outputs
