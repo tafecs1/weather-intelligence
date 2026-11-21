@@ -205,3 +205,106 @@ Tamil Nadu,Karur,AMBER,Rain,2026-11-23,42.4,Low,75.7,2026-11-20,2026-11-20 22:53
 Tamil Nadu,Tiruchirappalli,AMBER,Rain,2026-11-23,69.3,Medium,82.0,2026-11-20,2026-11-20 22:53 IST
 Tamil Nadu,Coimbatore,AMBER,Rain,2026-11-24,42.6,High,84.0,2026-11-20,2026-11-20 22:53 IST
 Tamil Nadu,Tiruppur,AMBER,Rain,2026-11-24,46.6,High,86.0,2026-11-20,2026-11-20 22:53 IST
+Jammu and Kashmir,Poonch,AMBER,Dry spell; Low temperature (indicative),2026-11-23,0.0,Not supplied,58.0,2026-11-21,2026-11-21 06:54 IST
+Uttarakhand,Uttar Kashi,AMBER,Dry spell; Low temperature (indicative),2026-11-24,0.0,Not supplied,52.7,2026-11-21,2026-11-21 06:54 IST
+Uttar Pradesh,Mirzapur,AMBER,Dry spell; Rain,2026-11-21,37.3,Low,75.0,2026-11-21,2026-11-21 06:54 IST
+Bihar,Banka,AMBER,Dry spell; Rain,2026-11-21,30.1,High,86.5,2026-11-21,2026-11-21 06:54 IST
+Arunachal Pradesh,Leparada,AMBER,Dry spell; Low temperature (indicative),2026-11-26,0.0,Not supplied,50.7,2026-11-21,2026-11-21 06:54 IST
+Arunachal Pradesh,Changlang,AMBER,Rain,2026-11-22,33.0,High,80.7,2026-11-21,2026-11-21 06:54 IST
+Arunachal Pradesh,Longding,AMBER,Rain,2026-11-22,76.7,High,80.0,2026-11-21,2026-11-21 06:54 IST
+Nagaland,Mon,AMBER,Rain,2026-11-22,41.6,High,84.3,2026-11-21,2026-11-21 06:54 IST
+Nagaland,Mokokchung,AMBER,Rain,2026-11-22,86.0,High,90.0,2026-11-21,2026-11-21 06:54 IST
+Nagaland,Wokha,AMBER,Rain,2026-11-22,55.4,High,90.0,2026-11-21,2026-11-21 06:54 IST
+Nagaland,Niuland,AMBER,Rain,2026-11-22,52.4,High,90.0,2026-11-21,2026-11-21 06:54 IST
+Nagaland,Dimapur,AMBER,Rain,2026-11-22,43.0,High,90.0,2026-11-21,2026-11-21 06:54 IST
+Nagaland,Chumoukedima,RED,Rain,2026-11-22,127.4,High,98.0,2026-11-21,2026-11-21 06:54 IST
+Nagaland,Tuensang,AMBER,Rain,2026-11-21,85.5,High,92.0,2026-11-21,2026-11-21 06:54 IST
+Nagaland,Noklak,AMBER,Low temperature (indicative); Rain,2026-11-26,12.8,High,67.0,2026-11-21,2026-11-21 06:54 IST
+Nagaland,Longleng,AMBER,Rain,2026-11-22,60.7,High,86.0,2026-11-21,2026-11-21 06:54 IST
+Nagaland,Tseminyu,AMBER,Rain,2026-11-22,49.0,High,90.0,2026-11-21,2026-11-21 06:54 IST
+Nagaland,Kohima,AMBER,Rain,2026-11-21,50.8,High,78.7,2026-11-21,2026-11-21 06:54 IST
+Nagaland,Peren,AMBER,Rain,2026-11-21,47.7,Medium,82.3,2026-11-21,2026-11-21 06:54 IST
+Mizoram,Mamit,AMBER,Rain,2026-11-21,32.8,High,92.0,2026-11-21,2026-11-21 06:54 IST
+Mizoram,Kolasib,AMBER,Rain,2026-11-21,24.5,High,82.0,2026-11-21,2026-11-21 06:54 IST
+Mizoram,Aizawl,AMBER,Dry spell; Rain,2026-11-21,32.1,High,92.0,2026-11-21,2026-11-21 06:54 IST
+Mizoram,Saitual,AMBER,Dry spell; Low temperature (indicative); Rain,2026-11-21,48.0,High,92.0,2026-11-21,2026-11-21 06:54 IST
+Mizoram,Khawzawl,AMBER,Dry spell; Rain,2026-11-21,30.9,High,92.0,2026-11-21,2026-11-21 06:54 IST
+Mizoram,Champhai,AMBER,Rain,2026-11-21,34.0,High,92.0,2026-11-21,2026-11-21 06:54 IST
+Mizoram,Serchhip,AMBER,Rain,2026-11-21,41.1,High,92.0,2026-11-21,2026-11-21 06:54 IST
+Mizoram,Lunglei,AMBER,Rain,2026-11-21,43.7,High,92.0,2026-11-21,2026-11-21 06:54 IST
+Mizoram,Hnahthial,AMBER,Dry spell; Rain,2026-11-21,33.0,High,92.0,2026-11-21,2026-11-21 06:54 IST
+Mizoram,Lawngtlai,AMBER,Rain,2026-11-21,27.4,High,92.0,2026-11-21,2026-11-21 06:54 IST
+Mizoram,Saiha,AMBER,Dry spell; Rain,2026-11-21,20.0,High,92.0,2026-11-21,2026-11-21 06:54 IST
+Meghalaya,West Garo Hills,AMBER,Rain,2026-11-23,16.6,High,71.3,2026-11-21,2026-11-21 06:54 IST
+Meghalaya,South Garo Hills,AMBER,Rain,2026-11-21,35.3,Medium,83.0,2026-11-21,2026-11-21 06:54 IST
+Meghalaya,West Khasi Hills,AMBER,Rain,2026-11-22,36.3,Medium,86.0,2026-11-21,2026-11-21 06:54 IST
+Assam,Hojai,AMBER,Rain,2026-11-22,26.3,High,76.7,2026-11-21,2026-11-21 06:54 IST
+Assam,West Karbi Anglong,RED,Rain,2026-11-22,99.6,High,98.0,2026-11-21,2026-11-21 06:54 IST
+Assam,Cachar,AMBER,Rain,2026-11-21,47.8,High,75.3,2026-11-21,2026-11-21 06:54 IST
+West Bengal,Paschim Bardhaman,AMBER,Dry spell; Rain,2026-11-21,38.9,High,87.6,2026-11-21,2026-11-21 06:54 IST
+West Bengal,Purba Bardhaman,AMBER,Dry spell; Rain,2026-11-21,20.2,High,82.4,2026-11-21,2026-11-21 06:54 IST
+West Bengal,Nadia,AMBER,Rain,2026-11-21,20.3,High,86.0,2026-11-21,2026-11-21 06:54 IST
+West Bengal,24 Paraganas North,AMBER,Dry spell; Rain,2026-11-21,17.0,High,91.1,2026-11-21,2026-11-21 06:54 IST
+West Bengal,Hooghly,AMBER,Dry spell; Rain,2026-11-21,37.6,High,90.0,2026-11-21,2026-11-21 06:54 IST
+West Bengal,Howrah,AMBER,Dry spell; Rain,2026-11-21,30.5,High,92.0,2026-11-21,2026-11-21 06:54 IST
+West Bengal,24 Paraganas South,AMBER,Dry spell; Rain,2026-11-21,20.3,High,90.7,2026-11-21,2026-11-21 06:54 IST
+West Bengal,Medinipur West,AMBER,Dry spell; Rain,2026-11-21,30.5,High,84.5,2026-11-21,2026-11-21 06:54 IST
+West Bengal,Medinipur East,AMBER,Dry spell; Rain,2026-11-21,37.3,High,92.0,2026-11-21,2026-11-21 06:54 IST
+Jharkhand,Giridih,AMBER,Dry spell; Rain,2026-11-21,35.6,High,78.2,2026-11-21,2026-11-21 06:54 IST
+Jharkhand,Deoghar,AMBER,Dry spell; Rain,2026-11-21,25.6,High,80.0,2026-11-21,2026-11-21 06:54 IST
+Jharkhand,Palamu,AMBER,Dry spell; Rain,2026-11-21,26.3,High,78.7,2026-11-21,2026-11-21 06:54 IST
+Jharkhand,Latehar,AMBER,Dry spell; Rain,2026-11-21,19.5,High,85.3,2026-11-21,2026-11-21 06:54 IST
+Jharkhand,Hazaribagh,AMBER,Dry spell; Rain,2026-11-21,18.5,High,86.1,2026-11-21,2026-11-21 06:54 IST
+Jharkhand,Ranchi,AMBER,Dry spell; Rain,2026-11-21,26.0,High,82.5,2026-11-21,2026-11-21 06:54 IST
+Jharkhand,Gumla,AMBER,Dry spell; Rain,2026-11-21,23.8,High,87.0,2026-11-21,2026-11-21 06:54 IST
+Jharkhand,Simdega,AMBER,Rain,2026-11-21,17.5,High,84.0,2026-11-21,2026-11-21 06:54 IST
+Odisha,Jharsuguda,AMBER,Dry spell; Rain,2026-11-21,19.5,High,88.0,2026-11-21,2026-11-21 06:54 IST
+Chhattisgarh,Balrampur,AMBER,Dry spell; Rain,2026-11-21,27.3,High,82.0,2026-11-21,2026-11-21 06:54 IST
+Chhattisgarh,Jashpur,AMBER,Dry spell; Rain,2026-11-21,24.7,High,92.0,2026-11-21,2026-11-21 06:54 IST
+Andhra Pradesh,Spsr Nellore,AMBER,Rain,2026-11-24,31.7,High,74.6,2026-11-21,2026-11-21 06:54 IST
+Andhra Pradesh,Tirupati,AMBER,Rain,2026-11-23,50.4,Medium,79.9,2026-11-21,2026-11-21 06:54 IST
+Andhra Pradesh,Nandyal,AMBER,Rain,2026-11-24,23.0,Medium,63.4,2026-11-21,2026-11-21 06:54 IST
+Karnataka,Mysuru,AMBER,Rain,2026-11-24,44.2,High,68.5,2026-11-21,2026-11-21 06:54 IST
+Kerala,Ernakulam,AMBER,Rain,2026-11-25,3.4,Medium,82.0,2026-11-21,2026-11-21 06:54 IST
+Kerala,Kottayam,AMBER,Rain,2026-11-24,6.5,High,86.0,2026-11-21,2026-11-21 06:54 IST
+Kerala,Alappuzha,AMBER,Rain,2026-11-24,3.0,High,86.0,2026-11-21,2026-11-21 06:54 IST
+Kerala,Pathanamthitta,AMBER,Rain,2026-11-24,7.0,Medium,82.0,2026-11-21,2026-11-21 06:54 IST
+Kerala,Kollam,AMBER,Rain,2026-11-24,69.2,High,82.7,2026-11-21,2026-11-21 06:54 IST
+Tamil Nadu,Thiruvallur,AMBER,Rain,2026-11-23,53.0,High,88.0,2026-11-21,2026-11-21 06:54 IST
+Tamil Nadu,Chennai,AMBER,Rain,2026-11-23,48.3,High,88.0,2026-11-21,2026-11-21 06:54 IST
+Tamil Nadu,Kanchipuram,AMBER,Rain,2026-11-23,54.0,High,88.0,2026-11-21,2026-11-21 06:54 IST
+Tamil Nadu,Chengalpattu,AMBER,Rain,2026-11-23,47.7,High,88.0,2026-11-21,2026-11-21 06:54 IST
+Tamil Nadu,Ranipet,AMBER,Rain,2026-11-23,51.6,High,88.0,2026-11-21,2026-11-21 06:54 IST
+Tamil Nadu,Tirupathur,AMBER,Rain,2026-11-24,32.3,High,71.0,2026-11-21,2026-11-21 06:54 IST
+Tamil Nadu,Tiruvannamalai,AMBER,Rain,2026-11-23,50.3,High,88.0,2026-11-21,2026-11-21 06:54 IST
+Tamil Nadu,Villupuram,AMBER,Rain,2026-11-23,50.3,High,88.0,2026-11-21,2026-11-21 06:54 IST
+Tamil Nadu,Kallakurichi,AMBER,Rain,2026-11-23,54.8,High,88.0,2026-11-21,2026-11-21 06:54 IST
+Tamil Nadu,Namakkal,AMBER,Rain,2026-11-24,97.6,High,78.5,2026-11-21,2026-11-21 06:54 IST
+Tamil Nadu,Dindigul,AMBER,Rain,2026-11-23,88.5,Medium,84.0,2026-11-21,2026-11-21 06:54 IST
+Tamil Nadu,Ariyalur,AMBER,Rain,2026-11-23,76.0,High,88.0,2026-11-21,2026-11-21 06:54 IST
+Tamil Nadu,Cuddalore,AMBER,Rain,2026-11-23,73.0,High,88.0,2026-11-21,2026-11-21 06:54 IST
+Tamil Nadu,Mayiladuthurai,AMBER,Rain,2026-11-23,77.3,High,88.0,2026-11-21,2026-11-21 06:54 IST
+Tamil Nadu,Nagapattinam,AMBER,Rain,2026-11-23,99.1,High,88.0,2026-11-21,2026-11-21 06:54 IST
+Tamil Nadu,Thiruvarur,AMBER,Rain,2026-11-23,94.6,High,88.0,2026-11-21,2026-11-21 06:54 IST
+Tamil Nadu,Thanjavur,AMBER,Rain,2026-11-23,74.0,High,88.0,2026-11-21,2026-11-21 06:54 IST
+Tamil Nadu,Pudukkottai,AMBER,Rain,2026-11-24,59.9,High,82.7,2026-11-21,2026-11-21 06:54 IST
+Tamil Nadu,Sivaganga,AMBER,Rain,2026-11-23,85.5,High,88.0,2026-11-21,2026-11-21 06:54 IST
+Tamil Nadu,Madurai,AMBER,Rain,2026-11-24,73.8,High,86.0,2026-11-21,2026-11-21 06:54 IST
+Tamil Nadu,Theni,AMBER,Rain,2026-11-24,63.1,High,86.0,2026-11-21,2026-11-21 06:54 IST
+Tamil Nadu,Virudhunagar,AMBER,Rain,2026-11-24,82.0,High,86.0,2026-11-21,2026-11-21 06:54 IST
+Tamil Nadu,Ramanathapuram,AMBER,Rain,2026-11-23,45.6,High,88.0,2026-11-21,2026-11-21 06:54 IST
+Tamil Nadu,Tuticorin,AMBER,Rain,2026-11-23,88.2,Medium,84.0,2026-11-21,2026-11-21 06:54 IST
+Tamil Nadu,Tenkasi,AMBER,Rain,2026-11-24,142.5,High,86.0,2026-11-21,2026-11-21 06:54 IST
+Tamil Nadu,Tirunelveli,AMBER,Rain,2026-11-24,73.5,High,86.0,2026-11-21,2026-11-21 06:54 IST
+Tamil Nadu,Kanniyakumari,AMBER,Rain,2026-11-24,88.5,High,86.0,2026-11-21,2026-11-21 06:54 IST
+Tamil Nadu,Coimbatore,AMBER,Rain,2026-11-24,55.5,High,82.0,2026-11-21,2026-11-21 06:54 IST
+Tamil Nadu,Tiruppur,AMBER,Rain,2026-11-24,63.9,High,86.0,2026-11-21,2026-11-21 06:54 IST
+Puducherry,Pondicherry,AMBER,Rain,2026-11-23,68.5,High,88.0,2026-11-21,2026-11-21 06:54 IST
+Puducherry,Karaikal,AMBER,Rain,2026-11-23,73.4,High,88.0,2026-11-21,2026-11-21 06:54 IST
+Andaman and Nicobar Islands,Nicobars,AMBER,Rain,2026-11-21,123.5,High,92.0,2026-11-21,2026-11-21 06:54 IST
+Tamil Nadu,Perambalur,AMBER,Rain,2026-11-23,51.7,High,88.0,2026-11-21,2026-11-21 06:54 IST
+Tripura,Sepahijala,AMBER,Dry spell; Rain,2026-11-21,27.4,High,92.0,2026-11-21,2026-11-21 06:54 IST
+Tripura,West Tripura,AMBER,Dry spell; Rain,2026-11-21,25.0,High,92.0,2026-11-21,2026-11-21 06:54 IST
+Tripura,Dhalai,AMBER,Dry spell; Rain,2026-11-21,25.3,High,87.0,2026-11-21,2026-11-21 06:54 IST
+Tripura,South Tripura,AMBER,Rain,2026-11-21,26.7,High,92.0,2026-11-21,2026-11-21 06:54 IST
+Tripura,Gomati,AMBER,Dry spell; Rain,2026-11-21,34.7,High,92.0,2026-11-21,2026-11-21 06:54 IST
